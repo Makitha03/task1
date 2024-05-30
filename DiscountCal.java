@@ -10,10 +10,18 @@ public class DiscountCal {
         double purchaseamt = scanner.nextDouble();
 
         
-        double discount = 0.0;
-        if (purchaseamt >= 500 && purchaseamt <= 1000) {
+        double discount = 0;
+        if(purchaseamt<=500)
+        {
+	discount=purchaseamt;
+         }
+       else if (purchaseamt >= 500 && purchaseamt <= 1000) 
+      {
+
             discount = purchaseamt * 0.10; 
-        } else if (purchaseamt > 1000) {
+        } 
+        else if (purchaseamt > 1000) 
+       {
             discount = purchaseamt * 0.20; 
         }
 
